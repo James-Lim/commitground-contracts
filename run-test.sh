@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+cd `dirname "$0"`
 ganache-cli -p 7545 > /dev/null & pid=$!
 if ps -p $pid > /dev/null
 then
